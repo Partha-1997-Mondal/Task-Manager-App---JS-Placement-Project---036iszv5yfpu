@@ -1,1 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+    <section id="main">
+        
+       
+       
+            <div id="open">
+                <div id="card-header">OPEN</div>
+                <div id="card-contents" class="append-task"></div>
+           </div>
+
+
+           <div id="in-progress">
+            <div id="card-header">IN PROGRESS</div>
+                <div id="card-contents" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+           </div>
+
+
+           <div id="in-review">
+                <div id="card-header">IN REVIEW</div>
+                <div id="card-contents" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+           </div>
+
+
+            <div id="done">
+                <div id="card-header">DONE</div>
+                <div id="card-contents" ondrop="drop(event)" ondragover="allowDrop(event)">    
+            </div>
+
+
+        </section>
+    
+    
+
+<section id="create-button">
+    <div>
+        <button type="button" onclick="show()">Add Task</button>
+    </div>
+    <div id="addtask">
+        <input type="text" placeholder="Enter your Task" id="task-name">
+        <textarea id="task-description" rows="5" cols="10" placeholder="Task description..."></textarea>
+        <button type="button" id="add-task" >Create Task</button>
+        <button type="button" onclick="hide()">Cancel</button>
+    </div>
+
+
+</section>
+   
+
+    <script src="App.js" defer></script>
+</body>
+</html>
 
