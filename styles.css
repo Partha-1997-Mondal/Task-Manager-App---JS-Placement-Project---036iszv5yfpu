@@ -20,7 +20,7 @@ body{
 #done {
     height: fit-content;
     width: 16vw;
-    /* min-width: 150px; */
+    
     width: 200px;
     border-radius: 40px 0px 0px 0px;
     background-color: rgb(218, 190, 190);
@@ -37,7 +37,7 @@ body{
     font-size: 16px;
     font-weight: 600;
     color: white;
-    background-color: gray;
+    background-color: blueviolet;
     display: flex;
     align-items: center;
     padding: 10px;
@@ -51,6 +51,7 @@ body{
     height: auto;
     padding: 12px;
     padding-bottom: 150px;
+    background-color: aliceblue;
 }
 
 .delete-button{
@@ -73,5 +74,67 @@ body{
     background-color:lightblue;
     padding: 5px;
     border-radius: 15px;
+    margin-bottom: 10px;
     
+}
+
+#add{
+    background-color: blue;
+    border-radius: 15px;
+    border: none;
+    width: 119px;
+    height: 40px;
+    color: white;
+    transform: translate(562px, -55px);
+}
+
+#task-name{
+    height: 38px;
+    width: 300px;
+    background-color: snow;
+    border: none;
+    border-radius: 30px;
+    transform: translate(560px, -132px);
+}
+#task-description{
+    height: 100px;
+    width: 300px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    transform: translate(254px, 1px);
+}
+#add-task{
+    transform: translate(-48px, 34px);
+    border: none;
+    height: 32px;
+    width: 123px;
+    border-radius: 23px;
+    background-color: cornsilk;
+    color: blue;
+    font-weight: 600;
+   
+    
+}
+#cancel{
+    transform: translate(31px, 34px);
+    border: none;
+    height: 32px;
+    width: 123px;
+    border-radius: 23px;
+    background-color: cornsilk;
+    color: red;
+    font-weight: 600;
+    margin-left: -29px;
+}
+
+.task-manager{
+    margin-left: 540px;
+    margin-top: 0px;
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
+    text-shadow: 4px 4px 4px #aaa;
+}
+.clicktask{
+    font-family: "Sofia", sans-serif;
 }
